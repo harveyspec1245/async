@@ -47,3 +47,10 @@ jobs:
     - name: Artifacts
       run: |
         python setup.py bdist_wheel
+    - name: whl artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: whl-${{ matrix.python-version }}
+        path: build/bdist.linux-x86_64
+      # Use always() to always run this step to publish test results when there are test failures
+      if: ${{ always() }}
