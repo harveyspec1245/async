@@ -1,18 +1,7 @@
 import asyncio
 
 
-async def count(aaa: int, bbb: int):
-    '''
-
-    Parameters
-    ----------
-    aaa
-    bbb
-
-    Returns
-    -------
-
-    '''
+async def count():
     print("One")
     await asyncio.sleep(1)
     print("Two")
@@ -20,6 +9,11 @@ async def count(aaa: int, bbb: int):
 
 async def main():
     await asyncio.gather(count(), count(), count())
+
+
+def capital_case(x):
+    return x.capitalize()
+
 
 if __name__ == "__main__":
     import time
