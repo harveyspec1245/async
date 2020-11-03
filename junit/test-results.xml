@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="15" failures="0" skipped="0" tests="15" time="6.202" timestamp="2020-11-03T13:07:22.861163" hostname="ubuntu19"><testcase classname="" name="lib.python3.9.site-packages.pip._vendor.certifi.__main__" time="0.000"><error message="collection failure">lib/python3.9/site-packages/pip/_vendor/certifi/__main__.py:7: in &lt;module&gt;
+    args = parser.parse_args()
+/usr/local/lib/python3.9/argparse.py:1821: in parse_args
+    self.error(msg % ' '.join(argv))
+/usr/local/lib/python3.9/argparse.py:2575: in error
+    self.exit(2, _('%(prog)s: error: %(message)s\n') % args)
+/usr/local/lib/python3.9/argparse.py:2562: in exit
+    _sys.exit(status)
+E   SystemExit: 2</error></testcase><testcase classname="" name="lib.python3.9.site-packages.pip._vendor.html5lib.treeadapters.genshi" time="0.000"><error message="collection failure">lib/python3.9/site-packages/pip/_vendor/html5lib/treeadapters/genshi.py:3: in &lt;module&gt;
+    from genshi.core import QName, Attrs
+E   ModuleNotFoundError: No module named 'genshi'</error></testcase><testcase classname="" name="lib.python3.9.site-packages.pip._vendor.html5lib.treebuilders.etree_lxml" time="0.000"><error message="collection failure">lib/python3.9/site-packages/pip/_vendor/html5lib/treebuilders/etree_lxml.py:30: in &lt;module&gt;
+    import lxml.etree as etree
+E   ModuleNotFoundError: No module named 'lxml'</error></testcase><testcase classname="" name="lib.python3.9.site-packages.pip._vendor.html5lib.treewalkers.etree_lxml" time="0.000"><error message="collection failure">lib/python3.9/site-packages/pip/_vendor/html5lib/treewalkers/etree_lxml.py:6: in &lt;module&gt;
+    from lxml import etree
+E   ModuleNotFoundError: No module named 'lxml'</error></testcase><testcase classname="" name="lib.python3.9.site-packages.pip._vendor.html5lib.treewalkers.genshi" time="0.000"><error message="collection failure">lib/python3.9/site-packages/pip/_vendor/html5lib/treewalkers/genshi.py:3: in &lt;module&gt;
+    from genshi.core import QName
+E   ModuleNotFoundError: No module named 'genshi'</error></testcase><testcase classname="" name="lib.python3.9.site-packages.pip._vendor.toml.common" time="0.000"><error message="collection failure">lib/python3.9/site-packages/pip/_vendor/toml/common.py:6: in &lt;module&gt;
+    escape_to_escapedchars = dict(zip(_escapes, _escapedchars))
+E   NameError: name '_escapes' is not defined</error></testcase><testcase classname="" name="lib.python3.9.site-packages.pip._vendor.toml.encoder" time="0.000"><error message="collection failure">/usr/local/lib/python3.9/doctest.py:939: in find
+    self._find(tests, obj, name, module, source_lines, globs, {})
+../../.local/lib/python3.9/site-packages/_pytest/doctest.py:522: in _find
+    doctest.DocTestFinder._find(  # type: ignore
+/usr/local/lib/python3.9/doctest.py:1001: in _find
+    self._find(tests, val, valname, module, source_lines,
+../../.local/lib/python3.9/site-packages/_pytest/doctest.py:522: in _find
+    doctest.DocTestFinder._find(  # type: ignore
+/usr/local/lib/python3.9/doctest.py:989: in _find
+    test = self._get_test(obj, name, module, globs, source_lines)
+/usr/local/lib/python3.9/doctest.py:1073: in _get_test
+    return self._parser.get_doctest(docstring, globs, name,
+/usr/local/lib/python3.9/doctest.py:675: in get_doctest
+    return DocTest(self.get_examples(string, name), globs,
+/usr/local/lib/python3.9/doctest.py:689: in get_examples
+    return [x for x in self.parse(string, name)
+/usr/local/lib/python3.9/doctest.py:651: in parse
+    self._parse_example(m, name, lineno)
+/usr/local/lib/python3.9/doctest.py:720: in _parse_example
+    self._check_prefix(want_lines, ' '*indent, name,
+/usr/local/lib/python3.9/doctest.py:805: in _check_prefix
+    raise ValueError('line %r of the docstring for %s has '
+E   ValueError: line 20 of the docstring for pip._vendor.toml.encoder.dumps has inconsistent leading whitespace: 'b = [ "I\'m", "a", "list",]'</error></testcase><testcase classname="" name="lib.python3.9.site-packages.pip._vendor.urllib3.contrib.ntlmpool" time="0.000"><error message="collection failure">lib/python3.9/site-packages/pip/_vendor/urllib3/contrib/ntlmpool.py:9: in &lt;module&gt;
+    from ntlm import ntlm
+E   ModuleNotFoundError: No module named 'ntlm'</error></testcase><testcase classname="" name="lib.python3.9.site-packages.pip._vendor.urllib3.contrib.pyopenssl" time="0.000"><error message="collection failure">lib/python3.9/site-packages/pip/_vendor/urllib3/contrib/pyopenssl.py:46: in &lt;module&gt;
+    import OpenSSL.SSL
+E   ModuleNotFoundError: No module named 'OpenSSL'</error></testcase><testcase classname="" name="lib.python3.9.site-packages.pip._vendor.urllib3.contrib.securetransport" time="0.000"><error message="collection failure">lib/python3.9/site-packages/pip/_vendor/urllib3/contrib/securetransport.py:65: in &lt;module&gt;
+    from ._securetransport.bindings import Security, SecurityConst, CoreFoundation
+lib/python3.9/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py:52: in &lt;module&gt;
+    raise ImportError("The library Security could not be found")
+E   ImportError: The library Security could not be found</error></testcase><testcase classname="" name="lib.python3.9.site-packages.pip._vendor.urllib3.contrib.socks" time="0.000"><error message="collection failure">lib/python3.9/site-packages/pip/_vendor/urllib3/contrib/socks.py:40: in &lt;module&gt;
+    import socks
+E   ModuleNotFoundError: No module named 'socks'</error></testcase><testcase classname="" name="lib.python3.9.site-packages.pip._vendor.urllib3.contrib._securetransport.bindings" time="0.000"><error message="collection failure">lib/python3.9/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py:52: in &lt;module&gt;
+    raise ImportError("The library Security could not be found")
+E   ImportError: The library Security could not be found</error></testcase><testcase classname="" name="lib.python3.9.site-packages.pip._vendor.urllib3.contrib._securetransport.low_level" time="0.000"><error message="collection failure">lib/python3.9/site-packages/pip/_vendor/urllib3/contrib/_securetransport/low_level.py:18: in &lt;module&gt;
+    from .bindings import Security, CoreFoundation, CFConst
+lib/python3.9/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py:52: in &lt;module&gt;
+    raise ImportError("The library Security could not be found")
+E   ImportError: The library Security could not be found</error></testcase><testcase classname="" name="lib.python3.9.site-packages.setuptools._distutils.msvc9compiler" time="0.000"><error message="collection failure">lib/python3.9/site-packages/setuptools/_distutils/msvc9compiler.py:26: in &lt;module&gt;
+    import winreg
+E   ModuleNotFoundError: No module named 'winreg'</error></testcase><testcase classname="" name="lib.python3.9.site-packages.setuptools._distutils.command.bdist_msi" time="0.000"><error message="collection failure">lib/python3.9/site-packages/setuptools/_distutils/command/bdist_msi.py:19: in &lt;module&gt;
+    import msilib
+E   ModuleNotFoundError: No module named 'msilib'</error></testcase></testsuite></testsuites>
