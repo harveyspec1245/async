@@ -1,4 +1,4 @@
-from asyncio import countasync
+from asyncio import capital_case
 
 
 # def capital_case(x):
@@ -6,4 +6,4 @@ from asyncio import countasync
 
 
 def test_capital_case() -> None:
-    assert countasync.capital_case('semaphore') == 'Semaphore'
+    assert capital_case('semaphore') == 'Semaphore'
